@@ -1,0 +1,416 @@
+@font-face{
+    font-family: "Scate";
+    src: url("fonts/Sclate.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 114vh;
+    background-repeat: no-repeat;
+    background-image: url("картиночки/VotEntovstav.jpg");
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-first{
+    width: 410px;
+    height: 130px;
+}
+.topmenu{
+    padding: 0 70px;
+}
+nav a{
+    display: block;
+    text-align:center;
+    text-decoration: none;
+    transition: .2s linear;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu>li{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+.topmenu>li>a{
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+}
+.a{
+    font-weight: 500;
+    padding: 20px 15px;
+}
+.submenu li{
+    color: rgb(29, 13, 74);
+    font-family: "Scate";
+}
+.submenu{
+position: absolute;
+z-index:5;
+width: 200px;
+background-color: #C4DDEF;
+box-sizing: border-box;
+box-shadow: 0px 4px 5px gray;
+visibility: hidden;
+opacity: 0;
+transform: translateY(10px);
+transition: .3s ease-in-out;
+}
+
+.submenu li{
+    position: relative;
+}
+.submenu a{
+    background-color: aliceblue;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+.submenu .submenu{
+    position: absolute;
+    top: 0;
+}
+nav li:hover>.submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.menu-transformed{
+    width: 20vh;
+    height: 10vh;
+}
+.siniblock{  
+width: 400px;
+height: 180px;
+background: blue;
+animation: 2s block;
+}
+@keyframes block{
+from{
+    width: 0px;
+    height:180px;
+}
+to{
+    width: 400px;
+    height:180px;
+}
+}
+.one{
+background:linear-gradient(135deg,transparent 30px,blue 0);
+}
+.text-header{
+    color: white;
+    font-family: "Scate";
+    font-size: 25px;
+    width: 300px;
+}
+.text-header-block{
+    display: flex;
+    justify-content: right;
+    align-items:end ;
+    height: 100px;
+    width: 50vh;
+    animation:5s text;
+}
+@keyframes text{
+    from{
+      opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.but-1{
+    width: 150px;
+    height: 60px;
+    background-color:#0d1da6;
+    border: none;
+    
+}
+.voiti{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgb(29, 13, 74);
+    font-family: "Scate";
+    font-size: 15px;
+}
+@keyframes but{
+from{
+   opacity: 0;
+}
+to{
+   opacity: 1;
+}
+}
+.text-header-two{
+    color: white;
+    font-family: "Scate";
+    font-size: 15px;
+}
+.button-header{
+    display: flex;
+    justify-content: end;
+    width: 55vh;
+    animation:5s but;
+}
+.goluboi{
+    display: flex;
+    align-items: end ;
+    height: 94vh;
+}
+.sec-block-first{
+    width: 100%;
+    height: 200vh;
+    background-image:url("/картиночки/FonSectionFirst.png") ;
+}
+h1{
+    font-family: "Scate";
+    font-size: 30px;
+    height: 80px;
+}
+.Detroit{
+    font-family: "Scate";
+    font-size: 20px;
+    width: 650px;
+    height: 60px;
+}
+.text-section-first{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 35vh;
+}
+.div-cart{
+    display: flex;
+}
+.back-img{
+    width: 570px;
+    height: 425px;
+    background-position:2cm 2cm;
+    background-repeat: no-repeat;
+    background-image:url("картиночки/image 5.png") ;
+}
+.back-img-two{
+    width: 670px;
+    height: 414px;
+    background-repeat: no-repeat;
+    background-position:3cm 2cm;
+    background-image:url("картиночки/image 6.png") ;
+}
+.img-slider{
+    width: 700px;
+    height: 400px;
+}
+.slider-line{
+    height: 400px;
+    width:2100px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+.slider{
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+    align-items: end;
+}
+.slider-next{
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+}
+.slider-prev{
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+}
+.but-cont{
+    width: 100%;
+    display:flex ;
+    justify-content: center;
+    margin-top: -250px;
+}
+.left{
+    width: 900px;
+}
+.sec-block-two{
+    width: 100%;
+    height: 95vh;
+    background-color: #CBD1D5;
+}
+.cart{
+    width: 200px;
+}
+.comp{
+    width: 550px;
+    height: 400px;
+}
+.spons{
+    width: 560px;
+    height: 130px;
+}
+h3{
+    font-family: "Scate";
+    font-size: 30px; 
+}
+.inf{
+    font-family:"Roboto", sans-serif;;
+    font-size: 15px; 
+    width: 300px;
+}
+.text-sec-two{
+    width: 90%;
+    display: flex;
+    justify-content: right;
+    margin-top: -500px;
+}
+.tri-cart{
+   margin-left: 700px;
+}
+.ptx{
+    font-family:"Roboto", sans-serif;;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+.pictr{
+    margin-right: 60px;
+    margin-top: 10px;
+}
+.butnn{
+    border: none;
+    width: 180px;
+    height: 50px;
+    background-color: black;
+}
+.podr{
+    color:white;
+    font-family:"Roboto", sans-serif;;
+    font-size: 15px;
+}
+.but-7{
+    display: flex;
+    justify-content: right;
+    height: 100px;
+    align-items: end;
+    width: 80%;
+}
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background:#fff;
+    width: 450px;
+    height:202px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+}
+.popup.active .overlay{
+    display: block;
+}
+.popup.active .content{
+    transition: all 1s ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.end{
+    width: 100%;
+    height: 100vh;
+    background-color: #869DBF;
+}
+.cart-end{
+    width: 600px;
+    height: 100vh;
+}
+h6{
+display: flex;
+justify-content: right;
+margin-top: -630px;
+color: white;
+font-size: 20px;
+font-family: "Scate";
+width: 900;
+margin-right: 200px;
+}
+.email{
+    width: 300px;
+    height: 50px;
+    border: none;
+    background-color: #C4DDEF;
+    margin-left: 700px;
+}
+.email:invalid{
+    background-color: red;
+}
+.polevoda{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items:end;
+}
+.name{
+width: 300px;
+    height: 50px;
+    border: none;
+    background-color: #C4DDEF;
+    margin-left: 700px;
+    margin-top: 50px;
+}  
+.but-end{
+    width: 150px;
+    height: 60px;
+    border: none;
+    background-color: #3D4698;
+    color: white;
+font-size: 20px;
+font-family: "Scate";
+margin-left: 700px;
+margin-top: 100px;
+}
